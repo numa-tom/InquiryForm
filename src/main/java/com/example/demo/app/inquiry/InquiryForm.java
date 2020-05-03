@@ -6,14 +6,15 @@ import javax.validation.constraints.Size;
 
 public class InquiryForm {
 	
-	@Size(min = 1, max = 20, message = "Please input 20charcters or less")
+	@NotNull(message="記入必須です。")
+	@Size(min = 1, max = 20, message = "20文字以内で入力してください。")
 	private String name;
 	
-	@NotNull
-	@Email(message = "Invalid E-mail Format")
+	@NotNull(message="記入必須です。")
+	@Email(message = "アドレス形式で入力してください。")
 	private String email;
 	
-	@NotNull
+	@NotNull(message="記入必須です。")
 	private String contents;
 	
 	

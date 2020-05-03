@@ -16,7 +16,7 @@ public class SurveyForm {
 	private int satisfaction;
 	
 	@NotNull
-	@Size(min=1, max=200, message="please input 200 character orless")
+	@Size(min=1, max=200, message="200文字以内で入力してください。")
 	private String comment;
 	
 	public SurveyForm() {}

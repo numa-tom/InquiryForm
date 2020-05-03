@@ -84,7 +84,7 @@ public class SurveyController {
 		
 		surveyService.save(survey);
 		
-		redirectAttributes.addFlashAttribute("complete", "Thanks for your coorperation");
+		redirectAttributes.addFlashAttribute("complete", "ご協力ありがとうございました！");
 		return "redirect:/survey/form";
 		
 	}

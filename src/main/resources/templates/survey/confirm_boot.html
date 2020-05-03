@@ -22,7 +22,7 @@
 
       <div class="starter-template">
         <h1 th:text="${title}">Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        <p class="lead">アンケート入力確認画面です。<br> 問題がなければ送信してください。</p>
       </div>
 
 <div th:object="${surveyForm}">
@@ -38,13 +38,13 @@
 	<input type="hidden" name="age" th:value="*{age}">
 	<input type="hidden" name="satisfaction" th:value="*{satisfaction}">
 	<input type="hidden" name="comment" th:value="*{comment}">
-	<button type="submit" class="btn btn-primary">Go Back</button>
+	<button type="submit" class="btn btn-primary">戻る</button>
 </form>
 <form method="post" action="#" th:action="@{/survey/complete}">
 	<input type="hidden" name="age" th:value="*{age}">
 	<input type="hidden" name="satisfaction" th:value="*{satisfaction}">
 	<input type="hidden" name="comment" th:value="*{comment}">
-	<button type="submit" class="btn btn-primary">Complete</button>
+	<button type="submit" class="btn btn-primary">送信</button>
 </form>
 </div>
 
